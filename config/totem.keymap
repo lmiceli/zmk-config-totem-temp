@@ -120,8 +120,8 @@ BASE {
 bindings = <
 &hmp LEFT_CONTROL Q  &kp W        &kp F        &kp P         &kp B                                       &kp J          &kp L          &kp U        &kp Y        &hmp LCTRL LA(BSPC)
 &kp A                &hmp LALT R  &hmp LGUI S  &hmp LSHFT T  &kp G                                       &kp M          &hmp LSHFT N   &hmp LGUI E  &hmp LALT I  &lt FUN O
-        &kp Q        &kp Z                &kp X        &kp C        &kp D         &kp V                                       &kp K          &kp H      &kp COMMA    &kp DOT      &kp FSLH &kp U
-        &lt 1 ESC     &lt ARROW SPACE  &kp TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
+        &kp Q        &kp Z                &kp X        &kp C        &kp D         &kp V                                       &kp K          &kp H      &kp COMMA    &kp DOT      &kp FSLH &kp BSPC
+        &kp TAB   &lt NAV ESC  &lt ARROW SPACE   &lt SYM ENTER   &lt NUM BSPC  &hmp LGUI DEL
 >;
 };
 
