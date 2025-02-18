@@ -1,0 +1,28 @@
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+
+#include <dt-bindings/zmk/mouse.h>
+
+// Config from @caksoylar, defaults in comments
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <500>;     // 300
+  delay-ms = <0>;                   // 0
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <40>;      // 300
+  delay-ms = <0>;                   // 0
+};
+
+
+// https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/docs/docs/behaviors/mouse-emulation.md
+// Both mouse movement and scrolling have independently configurable acceleration profiles with three parameters:
+// -- delay before movement,
+// -- time to max speed and
+// -- the acceleration exponent.
+// The exponent is usually set to 0 for constant speed,
+// 1 for uniform acceleration or
+// 2 for uniform jerk.
+
