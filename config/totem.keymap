@@ -157,10 +157,10 @@ bindings = <
 
 MOU {
 bindings = <
-&kp LCTRL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                             &none     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+        &kp LCTRL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                             &none     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
         &none        &kp LALT      &kp LGUI      &kp LSHFT     &none                             &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-  &none  &bootloader  &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL                    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &none
-        &trans        &none           &trans                   &mkp MB1  &mkp MB2  &mkp MB3
+&none   &bootloader  &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL                    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &none
+        &trans       &none         &trans                                                        &mkp MB1  &mkp MB2  &mkp MB3
 >;
 };
 
