@@ -141,14 +141,14 @@ bindings = <
 &none &none         &none     &none     &none        &none                          &kp LG(PAGE_UP)  &kp F7    &kp F8    &kp F9     &kp LG(PAGE_DOWN) &none
             &kp LA(TAB)  &none   &none    &kp BSPC  &kp DEL  &none
 >;
-};
+
 
 MOU {
 bindings = <
 &kp LCTRL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                             &none     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
         &none        &kp LALT      &kp LGUI      &kp LSHFT     &none                             &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-        &bootloader  &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL                    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none
-        &trans        &none           &trans  &mkp MB3  &mkp MB1  &mkp MB2
+  &none  &bootloader  &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL                    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &none
+        &trans        &none           &trans                   &mkp MB1  &mkp MB2  &mkp MB3
 >;
 };
 
@@ -157,7 +157,7 @@ bindings = <
 &kp SQT    &kp LT     &kp GT     &kp DQT        &kp DOT                           &kp AMPS   &kp LBKT  &kp RBKT  &kp SEMICOLON  &kp PERCENT
 &kp EXCL   &kp MINUS  &kp PLUS   &kp EQUAL      &kp HASH                          &kp PIPE   &kp LPAR  &kp RPAR  &kp COLON      &kp QUESTION
 &none &kp CARET  &kp FSLH   &kp ASTRK  &kp BACKSLASH  &kp GRAVE                         &kp TILDE  &kp LBRC  &kp RBRC  &kp DOLLAR     &kp AT &none
-&kp BSPC       &kp UNDERSCORE  &kp LCTRL  &none  &none      &none
+&kp BSPC         &kp LCTRL  &kp UNDERSCORE                   &none  &none      &none
 >;
 };
 
