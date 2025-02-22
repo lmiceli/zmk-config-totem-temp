@@ -54,7 +54,7 @@ bindings = <&kp>, <&kp>;
 
 hmp: homerow_mods_pinky {
 compatible = "zmk,behavior-hold-tap";
-label = "HOMEROW_MODS";
+label = " ";
 #binding-cells = <2>;
 tapping-term-ms = <200>;
 quick-tap-ms = <0>;
@@ -63,39 +63,15 @@ bindings = <&kp>, <&kp>;
 };
 };
 
-// urob wip. LB5 y RB5 tmb?
-#include "zmk-helpers/key-labels/36.h"                                      // Source key-labels.
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // Left-hand keys.
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
+// urob wip. LB5 y RB5 tmb? deleted here
 
-/* Left-hand HRMs. */
-ZMK_HOLD_TAP(hml,
-        flavor = "balanced";
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R THUMBS>;
-        hold-trigger-on-release;
-        )
-
-/* Right-hand HRMs. */
-ZMK_HOLD_TAP(hmr,
-        flavor = "balanced";
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L THUMBS>;
-        hold-trigger-on-release;
-        )
-
-
-
-
-
-
+//        flavor = "balanced";
+//        tapping-term-ms = <280>;
+//        quick-tap-ms = <175>;
+//        require-prior-idle-ms = <150>;
+//        bindings = <&kp>, <&kp>;
+//        hold-trigger-key-positions = <KEYS_R THUMBS>;
+//        hold-trigger-on-release;
 
 combos {
 compatible = "zmk,combos";
@@ -154,10 +130,10 @@ compatible = "zmk,keymap";
 
 BASE {
 bindings = <
-          &hml LEFT_CONTROL Q  &kp W        &kp F        &kp P         &kp B                                       &kp J          &kp L          &kp U        &kp Y        &hmr LCTRL LA(BSPC)
-          &kp A                &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G                                       &kp M          &hmr LSHFT N   &hmr LGUI E  &hmr LALT I  &lt FUN O
+          &hmp LEFT_CONTROL Q  &kp W        &kp F        &kp P         &kp B                                       &kp J          &kp L          &kp U        &kp Y        &hmp LCTRL LA(BSPC)
+          &kp A                &hm LALT R   &hm  LGUI S  &hm  LSHFT T  &kp G                                       &kp M          &hm LSHFT N    &hm LGUI E   &hm LALT I   &lt FUN O
 &kp Q     &kp Z                &kp X        &kp C        &kp D         &kp V                                       &kp K          &kp H          &kp COMMA    &kp DOT      &kp FSLH            &kp BSPC
-                                                 &lt MOU TAB   &lt NAV ESC  &lt ARROW SPACE          &lt SYM ENTER   &lt NUM BSPC  &hmr LGUI DEL
+                                                 &lt MOU TAB   &lt NAV ESC  &lt ARROW SPACE          &lt SYM ENTER   &lt NUM BSPC  &hm LGUI DEL
 >;
 };
 
