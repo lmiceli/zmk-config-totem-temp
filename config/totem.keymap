@@ -73,8 +73,8 @@ swapper: swapper {
         compatible = "zmk,behavior-smart-toggle";
         #binding-cells = <0>;
         bindings = <&kp LALT>, <&kp TAB>;
-        ignored-key-positions = <SW13 RM1 RM2 RM3 RT2>;
-        // ignored-key-positions = <SWP_POS RM1 RM2 RM3 RT2>;
+        // things that should not close alt tab ui (shit tab and arrows)
+        // ignored-key-positions = <SWP_POS SW09 SW08 SW07 SW03>; 
 };
 
 
