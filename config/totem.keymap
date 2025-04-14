@@ -31,7 +31,7 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 // Extra key bindings
-#define SWP_POS SW13 // for alt tab companion (&kp LS(TAB))
+#define SWP_POS 23 // for alt tab companion (&kp LS(TAB))
 
 / {
 behaviors {
@@ -74,6 +74,8 @@ swapper: swapper {
         #binding-cells = <0>;
         bindings = <&kp LALT>, <&kp TAB>;
         // things that should not close alt tab ui (shit tab and arrows)
+        ignored-key-positions = <SWP_POS 16 17 18 7>;
+        // for some reason this format is not working
         // ignored-key-positions = <SWP_POS SW09 SW08 SW07 SW03>; 
 };
 
@@ -97,43 +99,43 @@ compatible = "zmk,combos";
 
 combo_med_next {
 timeout-ms = <50>;
-key-positions = <2 3>;
+key-positions = <2 3>;//FP
 bindings = <&kp C_NEXT>;
 };
 
 combo_med_prev {
 timeout-ms = <50>;
-key-positions = <1 2>;
+key-positions = <1 2>;//WF
 bindings = <&kp C_PREV>;
 };
 
 combo_med_pp {
 timeout-ms = <50>;
-key-positions = <1 4>;
+key-positions = <1 4>;//WB
 bindings = <&kp C_PP>;
 };
 
 combo_med_stop {
 timeout-ms = <50>;
-key-positions = <1 3>;
+key-positions = <1 3>;//WP
 bindings = <&kp C_STOP>;
 };
 
 combo_med_vol_up {
-timeout-ms = <50>; // FT
-key-positions = <2 13>;
+timeout-ms = <50>; 
+key-positions = <2 13>;// FT
 bindings = <&kp C_VOL_UP>;
 };
 
 combo_med_vol_dn {
-timeout-ms = <50>; // PS
-key-positions = <3 12>;
+timeout-ms = <50>; 
+key-positions = <3 12>;// PS
 bindings = <&kp C_VOL_DN>;
 };
 
 combo_med_mute {
-        timeout-ms = <50>; // SG
-        key-positions = <12 14>;
+        timeout-ms = <50>; 
+        key-positions = <12 14>;// SG
         bindings = <&kp C_MUTE>;
         };
 };
