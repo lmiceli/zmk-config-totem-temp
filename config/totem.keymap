@@ -131,56 +131,11 @@ combo_med_mute {
         };
 };
 
-// things that want to do while hand in mouse?
+#include "includes/base.dtsi"
 
 keymap {
 compatible = "zmk,keymap";
 
-// Updated aliases for key bindings
-#define __CTRL_Q_  &hmp LEFT_CONTROL Q
-#define ____W____  &kp W
-#define ____F____  &kp F
-#define ____P____  &kp P
-#define ____B____  &kp B
-#define ____J____  &kp J
-#define ____L____  &kp L
-#define ____U____  &kp U
-#define ____Y____  &kp Y
-#define __CA_BS__  &hmp LCTRL LA(BSPC)
-
-#define ____A____  &kp A
-#define _H_ALT_R_  &hm LALT R
-#define _H_GUI_S_  &hm LGUI S
-#define _H_SHF_T_  &hm LSHFT T
-#define ____G____  &kp G
-#define ____M____  &kp M
-#define _H_SHF_N_  &hm LSHFT N
-#define _H_GUI_E_  &hm LGUI E
-#define _H_ALT_I_  &hm LALT I
-#define __FUN_O__  &lt FUN O
-
-#define __ENTER__  &kp ENTER
-#define ____Z____  &kp Z
-#define ____X____  &kp X
-#define ____C____  &kp C
-#define ____D____  &kp D
-#define ____V____  &kp V
-#define ____K____  &kp K
-#define ____H____  &kp H
-#define __COMMA__  &kp COMMA
-#define ___DOT___  &kp DOT
-#define __FSLH___  &kp FSLH
-#define __BSPC___  &kp BSPC
-
-// Thumb cluster
-#define __NAV_ESC  &lt NAV ESC
-#define __ARR_SPC  &lt ARROW SPACE
-#define __MOU_TAB  &lt MOU TAB
-#define __NUM_BSP  &lt NUM BSPC
-#define __SYM_ENT  &lt SYM ENTER
-#define __LGI_DEL  &hm LGUI DEL
-
-// Update bindings with aliases
 BASE {
 bindings = <
            __CTRL_Q_  ____W____  ____F____  ____P____  ____B____           ____J____  ____L____  ____U____  ____Y____  __CA_BS__
