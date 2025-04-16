@@ -1,0 +1,60 @@
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
+//             |  0 |  1 |  2 |  3 |  4 |  |  5 |  6 |  7 |  8 |  9 | 
+//             | 10 | 11 | 12 | 13 | 14 |  | 15 | 16 | 17 | 18 | 19 | 
+//        | 20 | 21 | 22 | 23 | 24 | 25 |  | 26 | 27 | 28 | 29 | 30 | 31 | 
+//                       | 32 | 33 | 34 |  | 35 | 36 | 37 | 
+
+#define _Q 0
+#define _W 1
+#define _F 2
+#define _P 3
+#define _B 4
+
+#define _J 5
+#define _L 6
+#define _U 7
+#define _Y 8
+#define _QT 9
+
+#define _A 10
+#define _R 11
+#define _S 12
+#define _T 13
+#define _G 14
+
+#define _M 15
+#define _N 16
+#define _E 17
+#define _I 18
+#define _O 19
+
+#define _TL 20
+
+#define _Z 21
+#define _X 22
+#define _C 23
+#define _D 24
+#define _V 25
+
+#define _K 26
+#define _H 27
+#define _COMMA 28
+#define _DOT 29
+#define _FSLH 30
+
+#define _COL 31
+
+#define _T_ESC 32
+#define _T_SPC 33
+#define _T_TAB 34
+
+#define _T_BSP 35
+#define _T_ENT 36
+#define _T_LGUI
