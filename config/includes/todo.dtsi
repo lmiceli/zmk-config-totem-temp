@@ -1,0 +1,19 @@
+// todo merge in one repo
+// todo urob
+// https://github.com/urob/zmk-config?tab=readme-ov-file
+
+
+// things that want to do while hand in mouse?
+
+
+
+// urob wip. LB5 y RB5 tmb? deleted here
+
+//        flavor = "balanced";
+//        tapping-term-ms = <280>;
+//        quick-tap-ms = <175>;
+//        require-prior-idle-ms = <150>;
+//        bindings = <&kp>, <&kp>;
+//        hold-trigger-key-positions = <KEYS_R THUMBS>;
+//        hold-trigger-on-release;
+

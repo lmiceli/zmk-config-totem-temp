@@ -16,6 +16,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "includes/mouse.dtsi"
 #include "includes/combo.dtsi"
+#include "includes/todo.dtsi"
 // todo, add mouse and fix numbers
 // todo merge in one repo
 // todo urob
@@ -79,16 +80,6 @@ swapper: swapper {
         // for some reason this format is not working
         // ignored-key-positions = <SWP_POS SW09 SW08 SW07 SW03>; 
 };
-
-// urob wip. LB5 y RB5 tmb? deleted here
-
-//        flavor = "balanced";
-//        tapping-term-ms = <280>;
-//        quick-tap-ms = <175>;
-//        require-prior-idle-ms = <150>;
-//        bindings = <&kp>, <&kp>;
-//        hold-trigger-key-positions = <KEYS_R THUMBS>;
-//        hold-trigger-on-release;
 
 combos {
 compatible = "zmk,combos";
