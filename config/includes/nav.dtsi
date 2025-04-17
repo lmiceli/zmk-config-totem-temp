@@ -23,11 +23,11 @@
 #define __GA_LFT_  &kp LG(LA(LEFT))
 #define __GA_RGT_  &kp LA(LG(RIGHT))
 #define __SC_DEL_  &kp LS(LC(DELETE))
-#define __CAG_1__ &kp LC(LA(LG(N1)))
-#define __CAG_2__ &kp LC(LA(LG(N2)))
-#define __CAG_3__ &kp LC(LA(LG(N3)))
-#define __CAG_4__ &kp LC(LA(LG(N4)))
-#define __CAG_5__ &kp LC(LA(LG(N5)))
+#define __CAG_1__  &kp LC(LA(LG(N1)))
+#define __CAG_2__  &kp LC(LA(LG(N2)))
+#define __CAG_3__  &kp LC(LA(LG(N3)))
+#define __CAG_4__  &kp LC(LA(LG(N4)))
+#define __CAG_5__  &kp LC(LA(LG(N5)))
 
 // NAV {
 //   bindings = <
