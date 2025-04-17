@@ -41,3 +41,17 @@
 #define __NUM_BSP  &lt NUM BSPC
 #define __SYM_ENT  &lt SYM ENTER
 #define __LGI_DEL  &hm LGUI DEL
+
+BASE {
+  bindings = <
+             __CTRL_Q_  ____W____  ____F____  ____P____  ____B____           ____J____  ____L____  ____U____  ____Y____  __CA_BS__
+  
+             ____A____  _H_ALT_R_  _H_GUI_S_  _H_SHF_T_  ____G____           ____M____  _H_SHF_N_  _H_GUI_E_  _H_ALT_I_  __FUN_O__
+  
+  __ENTER__  ____Z____  ____X____  ____C____  ____D____  ____V____           ____K____  ____H____  __COMMA__  ___DOT___  __FSLH___  __BSPC___
+  
+                                      __NAV_ESC  __ARR_SPC  __MOU_TAB     __NUM_BSP  __SYM_ENT  __LGI_DEL
+  >;
+  };
+
+  

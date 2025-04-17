@@ -1,0 +1,52 @@
+// aliases for nav layer
+#define _________  &none
+#define __MB3____  &mkp MB3
+#define __MB2____  &mkp MB2
+#define __MB1____  &mkp MB1
+#define __SCR_DWN  &msc SCRL_DOWN
+#define __SCR_UP_  &msc SCRL_UP
+#define __SCR_LFT  &msc SCRL_LEFT
+#define __SCR_RGT  &msc SCRL_RIGHT
+#define __CG_LEFT  &kp LC(LG(LEFT))
+#define __CG_UP__  &kp LC(LG(UP))
+#define __CG_RGT_  &kp LC(LG(RIGHT))
+#define __G_PLUS_  &kp LG(PLUS)
+#define __G_MINS_  &kp LG(MINUS)
+#define __C_LFT__  &kp LC(LEFT)
+#define __C_RGT__  &kp LC(RIGHT)
+#define __SC_COM_  &kp LS(LC(COMMA))
+#define __SC_DOT_  &kp LS(LC(DOT))
+#define __VOL_D__  &kp C_VOL_DN
+#define __VOL_U__  &kp C_VOL_UP
+#define __PLAY___  &kp C_PLAY
+#define __MUTE___  &kp C_MUTE
+#define __GA_LFT_  &kp LG(LA(LEFT))
+#define __GA_RGT_  &kp LA(LG(RIGHT))
+#define __SC_DEL_  &kp LS(LC(DELETE))
+#define __CAG_1__ &kp LC(LA(LG(N1)))
+#define __CAG_2__ &kp LC(LA(LG(N2)))
+#define __CAG_3__ &kp LC(LA(LG(N3)))
+#define __CAG_4__ &kp LC(LA(LG(N4)))
+#define __CAG_5__ &kp LC(LA(LG(N5)))
+
+// NAV {
+//   bindings = <
+//              _________  __MB3____  __MB2____  __MB1____  _________           __CAG_1__   __CAG_2__   __CAG_3__   __CAG_4__   __CAG_5__
+  
+//              __SCR_DWN  __CG_LEFT  __CG_UP__  __CG_RGT_  __SCR_UP_           __G_PLUS_   __C_LFT__   __C_RGT__   __VOL_D__   __VOL_U__
+  
+//   _________  _________  __SCR_LFT  _________  __SCR_RGT  _________           __G_MINS_   __SC_COM_   __SC_COM_   __MUTE___   __PLAY___   _________
+  
+//                                    _________  _________  _________           __GA_LFT_   __SC_DEL_   __GA_RGT_
+//   >;
+//   };
+// NAV {
+//   bindings = <
+//         &none           &mkp MB3          &mkp MB2        &mkp MB1           &none                   &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))
+//         &msc SCRL_DOWN  &kp LC(LG(LEFT))  &kp LC(LG(UP))  &kp LC(LG(RIGHT))  &msc SCRL_UP            &kp LG(PLUS)        &kp LC(LEFT)        &kp LC(RIGHT)       &kp C_VOL_DN        &kp C_VOL_UP
+//   &none &none           &msc SCRL_LEFT    &none           &msc SCRL_RIGHT    &none                   &kp LG(MINUS)       &kp LS(LC(COMMA))   &kp LS(LC(DOT))     &kp C_PLAY          &kp C_MUTE         &none
+    
+//                                           &none           &none              &none                   &kp LG(LA(LEFT))    &kp LS(LC(DELETE))  &kp LA(LG(RIGHT))
+//   >;
+//   };
+  
