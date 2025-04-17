@@ -1,8 +1,5 @@
 // aliases for nav layer
-#define _________  &none
-#define __MB3____  &mkp MB3
-#define __MB2____  &mkp MB2
-#define __MB1____  &mkp MB1
+#define _________  &none  // Redefining here as it's specific to nav layer's visual layout
 #define __SCR_DWN  &msc SCRL_DOWN
 #define __SCR_UP_  &msc SCRL_UP
 #define __SCR_LFT  &msc SCRL_LEFT
@@ -28,6 +25,7 @@
 #define __CAG_3__  &kp LC(LA(LG(N3)))
 #define __CAG_4__  &kp LC(LA(LG(N4)))
 #define __CAG_5__  &kp LC(LA(LG(N5)))
+
 
 // NAV {
 //   bindings = <

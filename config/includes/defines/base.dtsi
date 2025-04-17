@@ -42,16 +42,43 @@
 #define __SYM_ENT  &lt SYM ENTER
 #define __LGI_DEL  &hm LGUI DEL
 
-BASE {
-  bindings = <
-             __CTRL_Q_  ____W____  ____F____  ____P____  ____B____           ____J____  ____L____  ____U____  ____Y____  __CA_BS__
-  
-             ____A____  _H_ALT_R_  _H_GUI_S_  _H_SHF_T_  ____G____           ____M____  _H_SHF_N_  _H_GUI_E_  _H_ALT_I_  __FUN_O__
-  
-  __ENTER__  ____Z____  ____X____  ____C____  ____D____  ____V____           ____K____  ____H____  __COMMA__  ___DOT___  __FSLH___  __BSPC___
-  
-                                      __NAV_ESC  __ARR_SPC  __MOU_TAB     __NUM_BSP  __SYM_ENT  __LGI_DEL
-  >;
-  };
+// Common key definitions used across layers
+#define _________  &none
+#define __CTRL___  &kp LCTRL
+#define __ALT____  &kp LALT
+#define __GUI____  &kp LGUI
+#define __SHIFT__  &kp LSHFT
+#define __MB3____  &mkp MB3
+#define __MB2____  &mkp MB2
+#define __MB1____  &mkp MB1
+#define __SPACE__  &kp SPACE
+#define ___ESC___  &kp ESC
+#define ___TAB___  &kp TAB
+#define ___DEL___  &kp DEL
+#define __TRANS__  &trans
 
-  
+// Common function keys used in multiple layers
+#define ___F1____  &kp F1
+#define ___F2____  &kp F2
+#define ___F3____  &kp F3
+#define ___F4____  &kp F4
+#define ___F5____  &kp F5
+#define ___F6____  &kp F6
+#define ___F7____  &kp F7
+#define ___F8____  &kp F8
+#define ___F9____  &kp F9
+#define ___F10___  &kp F10
+#define ___F11___  &kp F11
+#define ___F12___  &kp F12
+
+// Common Bluetooth controls used in multiple layers
+#define __BT_SEL0  &bt BT_SEL 0
+#define __BT_SEL1  &bt BT_SEL 1
+#define __BT_SEL2  &bt BT_SEL 2
+#define __BT_CLR_  &bt BT_CLR
+#define __BT_CLRA  &bt BT_CLR_ALL
+
+// Common system controls
+#define __RESET__  &sys_reset
+#define __BOOTLDR  &bootloader
+

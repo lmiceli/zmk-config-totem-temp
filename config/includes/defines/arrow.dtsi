@@ -1,0 +1,42 @@
+// aliases for arrow layer
+#define __CTRL___  &kp LCTRL
+#define __MB3____  &mkp MB3
+#define __MB2____  &mkp MB2
+#define __MB1____  &mkp MB1
+#define _________  &none
+#define __PG_UP__  &kp PG_UP
+#define __HOME___  &kp HOME
+#define ___UP____  &kp UP
+#define __END____  &kp END
+#define __PG_DN__  &kp PG_DN
+#define __A_LEFT_  &kp LA(LEFT)
+#define __ALT____  &kp LALT
+#define __GUI____  &kp LGUI
+#define __SHIFT__  &kp LSHFT
+#define __A_RIGHT  &kp LA(RIGHT)
+#define ___F11___  &kp F11
+#define __LEFT___  &kp LEFT
+#define __DOWN___  &kp DOWN
+#define __RIGHT__  &kp RIGHT
+#define __CAPS___  &kp CAPS
+#define __S_TAB__  &kp LS(TAB)
+#define __SWAPPER  &swapper
+#define __G_PG_UP  &kp LG(PAGE_UP)
+#define ___F7____  &kp F7
+#define ___F8____  &kp F8
+#define ___F9____  &kp F9
+#define __G_PG_DN  &kp LG(PAGE_DOWN)
+#define ___DEL___  &kp DEL
+#define __BSPC___  &kp BSPC
+
+// ARROW {
+//   bindings = <
+//              __CTRL___  __MB3____  __MB2____  __MB1____  _________           __PG_UP__  __HOME___  ___UP____  __END____  __PG_DN__
+
+//              __A_LEFT_  __ALT____  __GUI____  __SHIFT__  __A_RIGHT           ___F11___  __LEFT___  __DOWN___  __RIGHT__  __CAPS___
+
+//   _________  _________  _________  __S_TAB__  __SWAPPER  _________           __G_PG_UP  ___F7____  ___F8____  ___F9____  __G_PG_DN  _________
+
+//                                      _________  _________  _________           ___DEL___  __BSPC___  _________
+//   >;
+// };

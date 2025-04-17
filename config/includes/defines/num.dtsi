@@ -1,0 +1,19 @@
+// aliases for number layer
+#define _________  &none
+#define ___N7____  &kp N7
+#define ___N8____  &kp N8
+#define ___N9____  &kp N9
+#define __CTRL___  &kp LCTRL
+#define ___N0____  &kp N0
+#define ___N4____  &kp N4
+#define ___N5____  &kp N5
+#define ___N6____  &kp N6
+#define __SHIFT__  &kp LSHFT
+#define ___GUI___  &kp LGUI
+#define ___ALT___  &kp LALT
+#define ___N1____  &kp N1
+#define ___N2____  &kp N2
+#define ___N3____  &kp N3
+#define __BSPC___  &kp BSPC
+#define __SPACE__  &kp SPACE
+#define __ENTER__  &kp ENTER

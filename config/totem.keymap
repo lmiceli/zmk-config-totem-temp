@@ -89,8 +89,13 @@ combos {
         COMBO(med_mute, &kp C_MUTE,   _S _G)
 };
 
-#include "includes/base.dtsi"
-#include "includes/nav.dtsi"
+#include "includes/defines/base.dtsi"
+#include "includes/defines/nav.dtsi"
+#include "includes/defines/arrow.dtsi"
+#include "includes/defines/mou.dtsi"
+#include "includes/defines/sym.dtsi"
+#include "includes/defines/num.dtsi"
+#include "includes/defines/fun.dtsi"
 
 keymap {
 compatible = "zmk,keymap";
@@ -109,64 +114,76 @@ __ENTER__  ____Z____  ____X____  ____C____  ____D____  ____V____           ____K
 
 NAV {
 bindings = <
-           _________  __MB3____  __MB2____  __MB1____  _________           __CAG_1__   __CAG_2__   __CAG_3__   __CAG_4__   __CAG_5__
+           _________  __MB3____  __MB2____  __MB1____  _________           __CAG_1__  __CAG_2__  __CAG_3__  __CAG_4__  __CAG_5__
 
-           __SCR_DWN  __CG_LEFT  __CG_UP__  __CG_RGT_  __SCR_UP_           __G_PLUS_   __C_LFT__   __C_RGT__   __VOL_D__   __VOL_U__
+           __SCR_DWN  __CG_LEFT  __CG_UP__  __CG_RGT_  __SCR_UP_           __G_PLUS_  __C_LFT__  __C_RGT__  __VOL_D__  __VOL_U__
 
-_________  _________  __SCR_LFT  _________  __SCR_RGT  _________           __G_MINS_   __SC_COM_   __SC_COM_   __MUTE___   __PLAY___   _________
+_________  _________  __SCR_LFT  _________  __SCR_RGT  _________           __G_MINS_  __SC_COM_  __SC_COM_  __MUTE___  __PLAY___  _________
 
-                                 _________  _________  _________           __GA_LFT_   __SC_DEL_   __GA_RGT_
+                                 _________  _________  _________           __GA_LFT_  __SC_DEL_  __GA_RGT_
 >;
 };
 
 ARROW {
 bindings = <
-      &kp LCTRL     &mkp MB3  &mkp MB2    &mkp MB1   &none                          &kp PG_UP        &kp HOME  &kp UP    &kp END    &kp PG_DN
-      &kp LA(LEFT)  &kp LALT  &kp LGUI    &kp LSHFT  &kp LA(RIGHT)                  &kp F11          &kp LEFT  &kp DOWN  &kp RIGHT  &kp CAPS
-&none &none         &none     &kp LS(TAB) &swapper   &none                          &kp LG(PAGE_UP)  &kp F7    &kp F8    &kp F9     &kp LG(PAGE_DOWN) &none
-                   
-                                    &none  &none   &none                            &kp DEL  &kp BSPC    &none
+           __CTRL___  __MB3____  __MB2____  __MB1____  _________           __PG_UP__  __HOME___  ___UP____  __END____  __PG_DN__
+
+           __A_LEFT_  __ALT____  __GUI____  __SHIFT__  __A_RIGHT           ___F11___  __LEFT___  __DOWN___  __RIGHT__  __CAPS___
+
+_________  _________  _________  __S_TAB__  __SWAPPER  _________           __G_PG_UP  ___F7____  ___F8____  ___F9____  __G_PG_DN  _________
+
+                                 _________  _________  _________           ___DEL___  __BSPC___  _________
 >;
 };
 
+
 MOU {
 bindings = <
-        &kp LCTRL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                             &none     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
-        &none        &kp LALT      &kp LGUI      &kp LSHFT     &none                             &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none   &bootloader  &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL                    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &none
+           __CTRL___  __BT_SEL0  __BT_SEL1  __BT_SEL2  _________           _________  __SCR_UP_  __MOV_UP_  __SCR_DN_  _________
 
-                              &trans       &none         &trans                                 &mkp MB2  &mkp MB1  &mkp MB3
+           _________  __ALT____  __GUI____  __SHIFT__  _________           _________  __MOV_LFT  __MOV_DN_  __MOV_RGT  _________
+
+_________  __BOOTLDR  __RESET__  _________  __BT_CLR_  __BT_CLRA           _________  __SCR_LFT  _________  __SCR_RGT  _________  _________
+
+                                 __TRANS__  _________  __TRANS__           ___MB2___  ___MB1___  ___MB3___
 >;
 };
 
 SYM {
 bindings = <
-          &kp SQT    &kp LT     &kp GT     &kp DQT        &kp DOT                           &kp AMPS   &kp LBKT  &kp RBKT  &kp SEMICOLON  &kp PERCENT
-          &kp EXCL   &kp MINUS  &kp PLUS   &kp EQUAL      &kp HASH                          &kp PIPE   &kp LPAR  &kp RPAR  &kp COLON      &kp QUESTION
-&none     &kp CARET  &kp FSLH   &kp ASTRK  &kp BACKSLASH  &kp GRAVE                         &kp TILDE  &kp LBRC  &kp RBRC  &kp DOLLAR     &kp AT &none
+           ___SQT___  ___LT____  ___GT____  ___DQT___  ___DOT___           __AMPS___  __LBKT___  __RBKT___  __SCOLON_  __PRCNT__
 
-                                &kp BSPC   &kp UNDERSCORE &kp LGUI                          &none      &none     &none
+           __EXCL___  __MINUS__  __PLUS___  __EQUAL__  __HASH___           __PIPE___  __LPAR___  __RPAR___  __COLON__  __QMARK__
+
+_________  __CARET__  __FSLH___  __ASTRK__  __BSLASH_  __GRAVE__           __TILDE__  __LBRC___  __RBRC___  __DOLLAR_  ___AT____  _________
+
+                                 __BSPC___  __UNDER__  ___GUI___           _________  _________  _________
 >;
 };
 
 NUM {
 bindings = <
-        &none   &kp N7  &kp N8  &kp N9         &none         &none  &none      &none     &none     &kp LCTRL
-        &kp N0  &kp N4  &kp N5  &kp N6         &none         &none  &kp LSHFT  &kp LGUI  &kp LALT  &none
-&none   &none   &kp N1  &kp N2  &kp N3         &none         &none  &none      &none     &none     &none &none
+           _________  ___N7____  ___N8____  ___N9____  _________           _________  _________  _________  _________  __CTRL___
 
-                &kp BACKSPACE  &kp SPACE  &kp ENTER         &none  &none  &none
+           ___N0____  ___N4____  ___N5____  ___N6____  _________           _________  __SHIFT__  ___GUI___  ___ALT___  _________
+
+_________  _________  ___N1____  ___N2____  ___N3____  _________           _________  _________  _________  _________  _________  _________
+
+                                 __BSPC___  __SPACE__  __ENTER__           _________  _________  _________
 >;
 };
 
 FUN {
 bindings = <
-           &kp F12  &kp F7  &kp F8  &kp F9   &kp PSCRN                     &bt BT_CLR_ALL  &none      &none     &kp LCTRL   &none
-           &kp F11  &kp F4  &kp F5  &kp F6   &kp SLCK                      &none           &kp LSHFT  &kp LGUI  &kp LALT    &none
-&kp ENTER  &kp F10  &kp F1  &kp F2  &kp F3   &kp PAUSE_BREAK               &none           &none      &none     &sys_reset  &bootloader &none
+           ___F12___  ___F7____  ___F8____  ___F9____  __PSCRN__           __BT_CLRA  _________  _________  __CTRL___  _________
 
-                                 &kp ESC  &kp SPACE  &kp TAB               &kp BACKSPACE   &kp ENTER  &kp DEL
+           ___F11___  ___F4____  ___F5____  ___F6____  __SLCK___           _________  __SHIFT__  ___GUI___  ___ALT___  _________
+
+__ENTER__  ___F10___  ___F1____  ___F2____  ___F3____  __PAUSE__           _________  _________  _________  __RESET__  __BOOTLDR  _________
+
+                                 ___ESC___  __SPACE__  ___TAB___           __BSPC___  __ENTER__  ___DEL___
 >;
 };
+
 };
 };

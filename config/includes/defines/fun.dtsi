@@ -1,0 +1,30 @@
+// aliases for function layer
+#define ___F12___  &kp F12
+#define ___F7____  &kp F7
+#define ___F8____  &kp F8
+#define ___F9____  &kp F9
+#define __PSCRN__  &kp PSCRN
+#define __BT_CLRA  &bt BT_CLR_ALL
+#define _________  &none
+#define __CTRL___  &kp LCTRL
+#define ___F11___  &kp F11
+#define ___F4____  &kp F4
+#define ___F5____  &kp F5
+#define ___F6____  &kp F6
+#define __SLCK___  &kp SLCK
+#define __SHIFT__  &kp LSHFT
+#define ___GUI___  &kp LGUI
+#define ___ALT___  &kp LALT
+#define __ENTER__  &kp ENTER
+#define ___F10___  &kp F10
+#define ___F1____  &kp F1
+#define ___F2____  &kp F2
+#define ___F3____  &kp F3
+#define __PAUSE__  &kp PAUSE_BREAK
+#define __RESET__  &sys_reset
+#define __BOOTLDR  &bootloader
+#define ___ESC___  &kp ESC
+#define __SPACE__  &kp SPACE
+#define ___TAB___  &kp TAB
+#define __BSPC___  &kp BSPC
+#define ___DEL___  &kp DEL
